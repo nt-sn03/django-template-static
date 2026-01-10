@@ -6,4 +6,14 @@
 
 {% block content %}
     <h1>Blog Page</h1>
+
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+        
+    <ul>
+        {% for blog in blogs %}
+            <li><a href='{% url "blog_detail" blog.id %}'>{{ blog.title }}</a></li>
+        {% endfor %}
+    </ul>
 {% endblock content %}
