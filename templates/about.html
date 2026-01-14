@@ -5,12 +5,307 @@
 {% endblock title %}
 
 {% block content %}
-    <h1>About Page</h1>
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 px-6 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="decorative-line mb-6"></div>
+            <h1 class="font-display text-5xl md:text-6xl text-slate-900 mb-6 leading-tight">
+                About Me
+            </h1>
+            <p class="text-xl text-slate-600 leading-relaxed">
+                Building robust backend systems and sharing knowledge about software craftsmanship
+            </p>
+        </div>
+    </section>
 
-    <ul>
-        <li>{{ first_name }}</li>
-        <li>{{ last_name }}</li>
-        <li>{{ phone }}</li>
-        <li>{{ email }}</li>
-    </ul>
+    <!-- Profile Section -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-12 mb-16">
+                <div class="md:col-span-1">
+                    <div class="aspect-square bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl"></div>
+                </div>
+                <div class="md:col-span-2">
+                    <h2 class="font-display text-3xl text-slate-900 mb-6">Hello, I'm a Backend Engineer</h2>
+                    <div class="prose prose-lg text-slate-600 space-y-4">
+                        <p>
+                            I'm a passionate software engineer specializing in backend development with Python and Django. With over 8 years of experience building scalable web applications, I've developed a deep appreciation for clean code, robust architecture, and the art of solving complex technical challenges.
+                        </p>
+                        <p>
+                            My journey in software development started with a curiosity about how systems work under the hood. That curiosity evolved into a career focused on building reliable, performant, and maintainable backend services that power modern web applications.
+                        </p>
+                        <p>
+                            I believe in the power of sharing knowledge and continuous learning. This blog is my way of documenting insights, best practices, and lessons learned from real-world projects. Whether it's optimizing database queries, designing microservices architectures, or implementing robust testing strategies, I enjoy breaking down complex topics into understandable concepts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Career Summary -->
+            <div class="bg-slate-50 rounded-2xl p-8 md:p-12">
+                <h3 class="font-display text-2xl text-slate-900 mb-6">Career Highlights</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <div class="text-4xl font-bold text-blue-600 mb-2">8+</div>
+                        <p class="text-slate-600">Years of Experience</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-blue-600 mb-2">50+</div>
+                        <p class="text-slate-600">Projects Delivered</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-blue-600 mb-2">100+</div>
+                        <p class="text-slate-600">Articles Written</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="py-20 px-6 bg-white border-t border-slate-100">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-12">
+                <div class="decorative-line mb-4"></div>
+                <h2 class="font-display text-4xl text-slate-900 mb-3">Professional Journey</h2>
+                <p class="text-lg text-slate-500">Key milestones in my software engineering career</p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex flex-wrap items-center gap-4 mb-3">
+                            <h3 class="text-xl font-semibold text-slate-900">Senior Backend Engineer</h3>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm font-medium rounded-full">2022 - Present</span>
+                        </div>
+                        <p class="text-blue-600 font-medium mb-3">Tech Innovations Inc.</p>
+                        <p class="text-slate-600 leading-relaxed mb-4">
+                            Leading the architecture and development of microservices-based platforms handling millions of requests daily. Mentoring junior developers and establishing best practices for code quality and system design.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">Python</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">Django</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">Microservices</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex flex-wrap items-center gap-4 mb-3">
+                            <h3 class="text-xl font-semibold text-slate-900">Backend Developer</h3>
+                            <span class="px-3 py-1 bg-slate-200 text-slate-700 text-sm font-medium rounded-full">2019 - 2022</span>
+                        </div>
+                        <p class="text-blue-600 font-medium mb-3">Digital Solutions Corp.</p>
+                        <p class="text-slate-600 leading-relaxed mb-4">
+                            Developed RESTful APIs and integrated third-party services for e-commerce platforms. Optimized database performance and implemented caching strategies that improved response times by 60%.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">Django REST</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">PostgreSQL</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">Redis</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex flex-wrap items-center gap-4 mb-3">
+                            <h3 class="text-xl font-semibold text-slate-900">Junior Software Engineer</h3>
+                            <span class="px-3 py-1 bg-slate-200 text-slate-700 text-sm font-medium rounded-full">2017 - 2019</span>
+                        </div>
+                        <p class="text-blue-600 font-medium mb-3">StartupHub Technologies</p>
+                        <p class="text-slate-600 leading-relaxed mb-4">
+                            Built and maintained web applications using Python and Flask. Collaborated with cross-functional teams to deliver features and learned the fundamentals of scalable system design.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">Python</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">Flask</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">MySQL</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills by Category -->
+    <section class="py-20 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-12">
+                <div class="decorative-line mb-4"></div>
+                <h2 class="font-display text-4xl text-slate-900 mb-3">Technical Skills</h2>
+                <p class="text-lg text-slate-500">Expertise across the full backend development stack</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Backend -->
+                <div class="skill-category bg-white rounded-xl p-8 border border-slate-200 shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-slate-900">Backend Development</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-700">Python & Django</span>
+                            <span class="text-blue-600 font-medium">Expert</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-700">FastAPI & Flask</span>
+                            <span class="text-blue-600 font-medium">Advanced</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-700">RESTful API Design</span>
+                            <span class="text-blue-600 font-medium">Expert</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-700">GraphQL</span>
+                            <span class="text-blue-600 font-medium">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill-category bg-white rounded-xl p-8 border border-slate-200 shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-slate-900">Frontend Technologies</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-700">HTML & CSS</span>
+                            <span class="text-indigo-600 font-medium">Advanced</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-700">JavaScript</span>
+                            <span class="text-indigo-600 font-medium">Intermediate</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-700">React & Vue</span>
+                            <span class="text-indigo-600 font-medium">Intermediate</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-700">Tailwind CSS</span>
+                            <span class="text-indigo-600 font-medium">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps -->
+                <div class="skill-category bg-white rounded-xl p-8 border border-slate-200 shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-slate-900">DevOps & Infrastructure</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-700">Docker & Kubernetes</span>
+                            <span class="text-emerald-600 font-medium">Advanced</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-700">AWS & Cloud Services</span>
+                            <span class="text-emerald-600 font-medium">Advanced</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-700">CI/CD Pipelines</span>
+                            <span class="text-emerald-600 font-medium">Advanced</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-700">Linux Administration</span>
+                            <span class="text-emerald-600 font-medium">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Practices -->
+                <div class="skill-category bg-white rounded-xl p-8 border border-slate-200 shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-slate-900">Tools & Best Practices</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-700">Git & Version Control</span>
+                            <span class="text-purple-600 font-medium">Expert</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-700">Testing (Unit, Integration)</span>
+                            <span class="text-purple-600 font-medium">Advanced</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-700">Agile & Scrum</span>
+                            <span class="text-purple-600 font-medium">Advanced</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-700">Code Review & Mentoring</span>
+                            <span class="text-purple-600 font-medium">Expert</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-12">
+                <div class="decorative-line mb-4"></div>
+                <h2 class="font-display text-4xl text-slate-900 mb-3">Development Philosophy</h2>
+                <p class="text-lg text-slate-500">Core principles that guide my approach to software engineering</p>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-100">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-3">Code Quality Over Quantity</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        I believe in writing clean, maintainable code that other developers can understand and build upon. Every line of code is a liability, so I focus on simplicity, clarity, and doing one thing well rather than adding unnecessary complexity.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 border border-indigo-100">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-3">Test-Driven Development</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Tests are not an afterthought but an integral part of the development process. They provide confidence when refactoring, document expected behavior, and catch bugs before they reach production. I advocate for comprehensive test coverage that balances thoroughness with maintainability.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 border border-purple-100">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-3">Continuous Learning</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Technology evolves rapidly, and staying current is essential. I dedicate time to learning new tools, frameworks, and best practices. This blog is part of that journey, helping me solidify my understanding by teaching others and engaging with the developer community.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl p-8 border border-emerald-100">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-3">Pragmatic Architecture</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        While I appreciate elegant architectural patterns, I believe in choosing the right tool for the job. Not every project needs microservices or complex abstractions. I focus on building systems that solve real problems efficiently and can scale when needed, without over-engineering for hypothetical future requirements.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock content %}

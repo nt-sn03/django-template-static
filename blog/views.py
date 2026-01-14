@@ -146,7 +146,7 @@ def about_view(request: HttpRequest) -> HttpResponse:
 
 def blog_view(request: HttpRequest) -> HttpResponse:
     data = {
-        'blogs': blogs
+        'blogs': blogs[-3:]
     }
     return render(request, 'blog.html', context=data)
 
